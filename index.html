@@ -2,13 +2,14 @@
 <html>
   <head>
     <title>MundosVirtuales</title>
-      <meta charset="utf-8"></meta>
-      <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-      <link rel="stylesheet" href="css/w3.css"></link>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/mv-style.css"></link>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <link rel="stylesheet" href="css/w3.css"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="css/mv-style.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/mv.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -19,13 +20,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span> 
           </button>
-          <a class="navbar-brand" href="#">WebSiteName</a>
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" style="max-height:25px"></img>
+          </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li> 
+            <li><a href="#home">Home</a></li>
+            <li><a href="#section1">Page 1</a></li>
+            <li><a href="#section2">Page 2</a></li> 
             <li><a href="#">Page 3</a></li> 
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -35,47 +38,43 @@
         </div>
       </div>
     </nav>
-    <header class="hero-wrap">
-      <div class="hero-video embed-responsive embed-responsive-fanuc">
-        <video autoplay loop muted class="embed-responsive-item">
-          <source src="http://www.fanuc.eu/~/media/files/video/homepage/corporate%20video-mp4.mp4" type="video/mp4">
+    <header class="hero-wrap" id="home">
+      <div class="hero-video embed-responsive embed-responsive-4by3">
+        <video autoplay loop muted class="embed-responsive-item" poster="img/imageVideo.png" >
+          <!-- <source src="http://www.fanuc.eu/~/media/files/video/homepage/corporate%20video-mp4.mp4" type="video/mp4">-->
+          <source src="http://www.fanuc.eu/~/media/files/video/800x600/fanuc%202012%20800x600%20h264.mp4" type="video/mp4">
+          </source>
         </video>
       </div>
     </header>
-    <section>
-      <div class="container">
-        <h1>Hola</h1>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non perfecti autem homines et tamen ingeniis excellentibus praediti excitantur saepe gloria, quae habet speciem honestatis et similitudinem. Tertium autem omnibus aut maximis rebus iis, quae secundum naturam sint, fruentem vivere. Cum ageremus, inquit, vitae beatum et eundem supremum diem, scribebamus haec. Ubi ut eam caperet aut quando? Duo Reges: constructio interrete. Iam quae corporis sunt, ea nec auctoritatem cum animi partibus, comparandam et cognitionem habent faciliorem. Ipse Epicurus fortasse redderet, ut Sextus Peducaeus, Sex. Theophrastum tamen adhibeamus ad pleraque, dum modo plus in virtute teneamus, quam ille tenuit, firmitatis et roboris. Epicurei num desistunt de isdem, de quibus et ab Epicuro scriptum est et ab antiquis, ad arbitrium suum scribere? Cuius ad naturam apta ratio vera illa et summa lex a philosophis dicitur.
+    <section id="section1" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          Claudii libidini, qui tum erat summo ne imperio, dederetur. Eorum enim omnium multa praetermittentium, dum eligant aliquid, quod sequantur, quasi curta sententia; Quid tanto concursu honestissimorum studiorum, tanto virtutum comitatu, si ea nullam ad aliam rem nisi ad voluptatem conquiruntur? Deinde non quaerimus, quid obscuretur aut intereat, quia sit admodum parvum, sed quid tale sit, ut expleat summam.
 
-        Non quaero, quid dicat, sed quid convenienter possit rationi et sententiae suae dicere. Quid, quod homines infima fortuna, nulla spe rerum gerendarum, opifices denique delectantur historia? Vidit Homerus probari fabulam non posse, si cantiunculis tantus irretitus vir teneretur; Idem iste, inquam, de voluptate quid sentit? Ergo opifex plus sibi proponet ad formarum quam civis excellens ad factorum pulchritudinem? Eam si varietatem diceres, intellegerem, ut etiam non dicente te intellego;
+          Atque etiam ad iustitiam colendam, ad tuendas amicitias et reliquas caritates quid natura valeat haec una cognitio potest tradere. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti? Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Qui autem de summo bono dissentit de tota philosophiae ratione 
+        </div>
+        <div class="col-sm-6">
+          Claudii libidini, qui tum erat summo ne imperio, dederetur. Eorum enim omnium multa praetermittentium, dum eligant aliquid, quod sequantur, quasi curta sententia; Quid tanto concursu honestissimorum studiorum, tanto virtutum comitatu, si ea nullam ad aliam rem nisi ad voluptatem conquiruntur? Deinde non quaerimus, quid obscuretur aut intereat, quia sit admodum parvum, sed quid tale sit, ut expleat summam.
 
-        Hoc tu nunc in illo probas. Quamquam id quidem, infinitum est in hac urbe; Minime vero istorum quidem, inquit. Itaque rursus eadem ratione, qua sum paulo ante usus, haerebitis. Non potes ergo ista tueri, Torquate, mihi crede, si te ipse et tuas cogitationes et studia perspexeris; Et non ex maxima parte de tota iudicabis? Nunc reliqua videamus, nisi aut ad haec, Cato, dicere aliquid vis aut nos iam longiores sumus. Quod praeceptum quia maius erat, quam ut ab homine videretur, idcirco assignatum est deo. Non dolere, inquam, istud quam vim habeat postea videro; An dubium est, quin virtus ita maximam partem optineat in rebus humanis, ut reliquas obruat? Ut in voluptate sit, qui epuletur, in dolore, qui torqueatur. Sed tamen est aliquid, quod nobis non liceat, liceat illis.
-
-        Claudii libidini, qui tum erat summo ne imperio, dederetur. Eorum enim omnium multa praetermittentium, dum eligant aliquid, quod sequantur, quasi curta sententia; Quid tanto concursu honestissimorum studiorum, tanto virtutum comitatu, si ea nullam ad aliam rem nisi ad voluptatem conquiruntur? Deinde non quaerimus, quid obscuretur aut intereat, quia sit admodum parvum, sed quid tale sit, ut expleat summam.
-
-        Atque etiam ad iustitiam colendam, ad tuendas amicitias et reliquas caritates quid natura valeat haec una cognitio potest tradere. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti? Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Qui autem de summo bono dissentit de tota philosophiae ratione dissentit. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in dolore. Nihilne te delectat umquam -video, quicum loquar-, te igitur, Torquate, ipsum per se nihil delectat? Immo vero, inquit, ad beatissime vivendum parum est, ad beate vero satis. Quid est, quod ab ea absolvi et perfici debeat? In quibus doctissimi illi veteres inesse quiddam caeleste et divinum putaverunt. Nonne videmus quanta perturbatio rerum omnium consequatur, quanta confusio? Ita similis erit ei finis boni, atque antea fuerat, neque idem tamen; Nihil enim desiderabile concupiscunt, plusque in ipsa iniuria detrimenti est quam in iis rebus emolumenti, quae pariuntur iniuria. Quod non subducta utilitatis ratione effici solet, sed ipsum a se oritur et sua sponte nascitur.
+          Atque etiam ad iustitiam colendam, ad tuendas amicitias et reliquas caritates quid natura valeat haec una cognitio potest tradere. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti? Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Qui autem de summo bono dissentit de tota philosophiae ratione dissentit. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in dolore. Nihilne te delectat umquam -video, quicum loquar-, te igitur, Torquate, ipsum per se nihil delectat? Immo vero, inquit, ad beatissime vivendum parum est, ad beate vero satis. Quid est, quod ab ea absolvi et perfici debeat? In quibus doctissimi illi veteres inesse quiddam caeleste et divinum putaverunt. Nonne videmus quanta perturbatio rerum omnium consequatur, quanta confusio? Ita similis erit ei finis boni, atque antea fuerat, neque idem tamen; Nihil enim desiderabile concupiscunt, plusque in ipsa iniuria detrimenti est quam in iis rebus emolumenti, quae pariuntur iniuria. Quod non subducta utilitatis ratione effici solet, sed ipsum a se oritur et sua sponte nascitur.
+        </div>
       </div>
     </section>
-
     
-    <script>
-      function checkScroll(){
-        var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+    <section id="section2" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          Claudii libidini, qui tum erat summo ne imperio, dederetur. Eorum enim omnium multa praetermittentium, dum eligant aliquid, quod sequantur, quasi curta sententia; Quid tanto concursu honestissimorum studiorum, tanto virtutum comitatu, si ea nullam ad aliam rem nisi ad voluptatem conquiruntur? Deinde non quaerimus, quid obscuretur aut intereat, quia sit admodum parvum, sed quid tale sit, ut expleat summam.
 
-        if($(window).scrollTop() > startY){
-          $('.navbar').addClass("scrolled");
-        }else{
-          $('.navbar').removeClass("scrolled");
-        }
-      }
+          Atque etiam ad iustitiam colendam, ad tuendas amicitias et reliquas caritates quid natura valeat haec una cognitio potest tradere. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti? Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Qui autem de summo bono dissentit de tota philosophiae ratione 
+        </div>
+        <div class="col-sm-6">
+          Claudii libidini, qui tum erat summo ne imperio, dederetur. Eorum enim omnium multa praetermittentium, dum eligant aliquid, quod sequantur, quasi curta sententia; Quid tanto concursu honestissimorum studiorum, tanto virtutum comitatu, si ea nullam ad aliam rem nisi ad voluptatem conquiruntur? Deinde non quaerimus, quid obscuretur aut intereat, quia sit admodum parvum, sed quid tale sit, ut expleat summam.
 
-      if($('.navbar').length > 0){
-        $(window).on("scroll load resize", function(){
-          checkScroll();
-        });
-      }
-    </script>
-    
-    
+          Atque etiam ad iustitiam colendam, ad tuendas amicitias et reliquas caritates quid natura valeat haec una cognitio potest tradere. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti? Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Qui autem de summo bono dissentit de tota philosophiae ratione dissentit. Fortitudinis quaedam praecepta sunt ac paene leges, quae effeminari virum vetant in dolore. Nihilne te delectat umquam -video, quicum loquar-, te igitur, Torquate, ipsum per se nihil delectat? Immo vero, inquit, ad beatissime vivendum parum est, ad beate vero satis. Quid est, quod ab ea absolvi et perfici debeat? In quibus doctissimi illi veteres inesse quiddam caeleste et divinum putaverunt. Nonne videmus quanta perturbatio rerum omnium consequatur, quanta confusio? Ita similis erit ei finis boni, atque antea fuerat, neque idem tamen; Nihil enim desiderabile concupiscunt, plusque in ipsa iniuria detrimenti est quam in iis rebus emolumenti, quae pariuntur iniuria. Quod non subducta utilitatis ratione effici solet, sed ipsum a se oritur et sua sponte nascitur.
+        </div>
+      </div>
+    </section>
   </body>
 </html>
