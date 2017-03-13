@@ -14,6 +14,32 @@
   border: none;
 }
 
+.nav.navbar-nav li a {
+  color: rgb(87, 87, 87);
+}
+
+.nav.navbar-nav li a:hover{
+  color: rgb(200, 200, 200);
+}
+
+@media (max-width: 767px) {
+  .navbar-default{
+    background-color: white;
+  }
+  .navbar-collapse{
+    background-color:white;
+  }
+  .nav.navbar-nav li a {
+    color: #1D70B7;
+  }
+  .nav.navbar-nav li a:hover {
+    color: rgb(87, 87, 87)
+  }
+
+}
+
+
+
 .hero-wrap {
   height: 100%;
   /*min-height: 480px;*/
@@ -37,6 +63,18 @@
   z-index: -10;
 }
 
+.parent {
+  display: table;
+  table-layout: fixed;
+}
+
+.child {
+  display:table-cell;
+  vertical-align:middle;
+  text-align:left;
+  float: none;
+}
+
 .navbar {
   -webkit-transition: all 0.6s ease-out;
   -moz-transition: all 0.6s ease-out;
@@ -54,11 +92,54 @@
   padding-bottom: 21%;
 }
 
+.slideanim {visibility:hidden;}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide; 
+  /* The duration of the animation */
+  animation-duration: 1s; 
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  } 
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
 body {
   position: relative; 
 }
-#section1 {padding-top:50px;padding-bottom:50px;color: #fff; background-color: #1D70B7;}
+#section1 {padding-top:50px;padding-bottom:50px;color: #1D70B7; background-color: #fff;}
 #section2 {padding-top:50px;padding-bottom:50px;color: black; background-color: #FED100;}
-#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
-#section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
-#section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+
+.mv-footer{
+  background-color: rgb(50, 50, 50);
+  color: white;
+}
+
+.mv-footer img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); /* make all photos black and white */ 
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+}

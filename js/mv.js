@@ -24,6 +24,12 @@ $(document).ready(function(){
     }  // End if
   });
   
+  $('.nav a').on('click', function(){
+    if($(window).width() < 767){
+      $('.navbar-toggle').click() //bootstrap 3.x by Richard
+    }
+  });
+  
   function checkScroll(){
     var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
 
@@ -40,4 +46,16 @@ $(document).ready(function(){
       checkScroll();
     });
   }
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
+    });
+  });
+  
 });
