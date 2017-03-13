@@ -16,6 +16,7 @@
 
 .nav.navbar-nav li a {
   color: rgb(240, 240, 240);
+  font-size: 18px;
 }
 
 .nav.navbar-nav li a:hover{
@@ -31,6 +32,7 @@
   }
   .nav.navbar-nav li a {
     color: #1D70B7;
+    font-size: 15px;
   }
   .nav.navbar-nav li a:hover {
     color: rgb(87, 87, 87)
