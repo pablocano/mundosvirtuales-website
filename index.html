@@ -4,9 +4,9 @@
     <title>MundosVirtuales</title>
     <meta charset="utf-8"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-    <link rel="stylesheet" href="css/w3.css"></link>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
     <link rel="stylesheet" href="css/mv-style.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet"></link>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/mv.js"></script>
@@ -48,32 +48,57 @@
       </div>
     </header>
     <section id="section1" class="container-fluid">
-      <div class="row parent">
-        <div class="col-sm-2 child">
-          <img src="img/logo.png" class="img-responsive slideanim"></img> 
+      <div class="row vertical-align">
+        <div class="col-sm-2 col-xs-6">
+            <img src="img/logo.png" class="img-responsive slideanim"></img> 
         </div>
-        <div class="col-sm-5 slideanim child">
-          Atque etiam ad iustitiam colendam, ad tuendas amicitias et reliquas caritates quid natura valeat haec una cognitio potest tradere. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti? Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Qui autem de summo bono dissentit de tota philosophiae ratione dissentit. 
+        <div class="col-sm-5 col-xs-6 slideanim mv-text">
+          Atque etiam ad iustitiam colendam, ad tuendas amicitias et reliquas caritates quid natura valeat haec una cognitio potest tradere. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti? Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Qui autem de summo bono dissentit de tota philosophiae ratione dissentit. YY
         </div>
-        <div class="col-sm-5 slideanim child">
+        <div class="col-sm-5 col-xs-12 slideanim mv-text">
           Claudii libidini, qui tum erat summo ne imperio, dederetur. Eorum enim omnium multa praetermittentium, dum eligant aliquid, quod sequantur, quasi curta sententia; Quid tanto concursu honestissimorum studiorum, tanto virtutum comitatu, si ea nullam ad aliam rem nisi ad voluptatem conquiruntur? Deinde non quaerimus, quid obscuretur aut intereat, quia sit admodum parvum, sed quid tale sit, ut expleat summam.
         </div>
       </div>
     </section>
     
     <section id="section2" class="container-fluid">
-      <div class="row parent">
-        <div class="col-sm-4 child">
+      <div class="row vertical-align">
+        <div class="col-sm-2 col-xs-6">
           <img src="img/FanucLogo.png" class="img-responsive slideanim"></img> 
         </div>
-        <div class="col-sm-4 slideanim child">
+        <div class="col-sm-5 col-xs-6 slideanim">
           Claudii libidini, qui tum erat summo ne imperio, dederetur. Eorum enim omnium multa praetermittentium, dum eligant aliquid, quod sequantur, quasi curta sententia; Quid tanto concursu honestissimorum studiorum, tanto virtutum comitatu, si ea nullam ad aliam rem nisi ad voluptatem conquiruntur? Deinde non quaerimus, quid obscuretur aut intereat, quia sit admodum parvum, sed quid tale sit, ut expleat summam.
         </div>
-        <div class="col-sm-4 slideanim child">
+        <div class="col-sm-5 col-xs-12 slideanim">
           Atque etiam ad iustitiam colendam, ad tuendas amicitias et reliquas caritates quid natura valeat haec una cognitio potest tradere. Nam si propter voluptatem, quae est ista laus, quae possit e macello peti? Potius inflammat, ut coercendi magis quam dedocendi esse videantur. Qui autem de summo bono dissentit de tota philosophiae ratione 
         </div>
       </div>
     </section>
+    <div id="googleMap" style="height:400px;"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwuK0xSWIjlejZ0-jQkCarevYH5nPJx-s"></script>
+    <script>
+      var myCenter = new google.maps.LatLng(-33.4383709, -70.6454151);
+      
+      function initialize() {
+        var mapProp = {
+          center: myCenter,
+          zoom: 17,
+          scrollwheel: false,
+          draggable: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        
+        var marker = new google.maps.Marker({
+                                            position: myCenter,
+                                            });
+                                            
+                                            marker.setMap(map);
+      }
+    
+    google.maps.event.addDomListener(window, 'load', initialize);
+      </script>
     
     <footer class="container-fluid mv-footer">
       <div class="row">
@@ -87,16 +112,16 @@
         </div>
       </div>
       <div class="row parent">
-        <div class="col-sm-3 child">
+        <div class="col-sm-2 child">
           <img src="img/logo.png" class="img-responsive">
         </div>
-        <div class="col-sm-3 child">
-          <img src="img/FanucLogo.png" class="img-responsive">
+        <div class="col-sm-2 child">
+          <img src="img/FanucLogo2.png" class="img-responsive">
         </div>
-        <div class="col-sm-3 child">
+        <div class="col-sm-2 child">
           <img src="img/BussoGroup.png" class="img-responsive">
         </div>
-        <div class="col-sm-3 child">
+        <div class="col-sm-6 child">
         </div>
       </div>
     </footer>
