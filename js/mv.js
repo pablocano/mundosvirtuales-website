@@ -42,9 +42,6 @@ $(document).ready(function(){
         $('.navbar li a').css('color', 'rgb(240,240,240)');
       }
     }
-    if ($("#myNavbar").is(":visible")) {
-      $('.navbar-toggle').click()
-    }
   }
   
   $('.navbar li a').hover(function(e) {
