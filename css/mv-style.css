@@ -1,3 +1,6 @@
+@font-face { font-family: 'GillSansMT'; src: url('fonts/GILLSANSMTNORMAL.TTF') format('truetype'); } 
+@font-face { font-family: 'GillSansMT'; font-weight: bold; src: url('fonts/GILLSANSMTBOLD.TTF') format('truetype'); } 
+
 .navbar-default {
   background: none;
   border: none;
@@ -92,7 +95,7 @@ body,
 
 .hero-intro-text .intro-lead-in {
   margin-bottom: 25px;
-  font-family: 'GillSansMT';
+  font-family: 'GillSansMT', bold;
   color: rgb(240, 240, 240);
   font-size: 25px;
   line-height: 25px;
@@ -112,7 +115,7 @@ body,
 
   .hero-intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: 'GillSansMT';
+    font-family: 'GillSansMT', bold;
     color: rgb(240, 240, 240);
     font-size: 42px;
     line-height: 42px;
@@ -200,16 +203,15 @@ body {
 }
 
 .footer-text{
+  font-family: 'GillSansMT', normal;
   padding-top: 30px;
 }
 
 .mv-text{
-  font-family: 'ABeeZee', sans-serif;
+  font-family: 'GillSansMT', normal;
 }
 
 .mv-title{
   font-family:'Audiowide', cursive;
   z-index: 1000;
 }
-
-@font-face { font-family: GillSansMT; src: url('fonts/GILSANSMTNORMAL.TTF'); } 
