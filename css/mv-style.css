@@ -101,7 +101,7 @@ body,
 .hero-intro-text .intro-heading {
   margin-bottom: 25px;
   text-transform: uppercase;
-  color: rgb(29, 112, 183);
+  color: rgb(240, 240, 240);
   font-family: 'Audiowide', cursive;
   font-size: 30px;
   font-weight: 700;
@@ -121,7 +121,7 @@ body,
   .hero-intro-text .intro-heading {
     margin-bottom: 50px;
     text-transform: uppercase;
-    color: rgb(29, 112, 183);
+    color: rgb(240, 240, 240);
     font-family: 'Audiowide', cursive;
     font-size: 75px;
     font-weight: 700;
