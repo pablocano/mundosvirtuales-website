@@ -7,7 +7,7 @@ $(function() {
     $mask = $('#toolsVideoShield'),
     heroAR = 16 / 9,
     vid;
-
+    
     vid = $heroEl.get(0);
 
     // play the video when the browser is able and update the
@@ -61,7 +61,6 @@ $(function() {
   //
   // Play the BG video.
   function playVid() {
-    $heroEl.removeAttr('poster');
     fitHeroEl();
     vid.play();
   }
