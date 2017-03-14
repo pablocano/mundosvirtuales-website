@@ -68,6 +68,7 @@
 .parent {
   display: table;
   table-layout: fixed;
+  max-height: 10px;
 }
 
 .child {
