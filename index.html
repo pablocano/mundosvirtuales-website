@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
     <link rel="stylesheet" href="css/mv-style.css"></link>
     <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"></link>
     <link rel="icon" href="img/minilogo2.png"></link>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/mv.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -41,13 +41,18 @@
         </div>
       </div>
     </nav>
-    <header class="hero-wrap" id="home">
-      <div class="hero-video embed-responsive embed-responsive-16by9">
-        <video autoplay muted loop class="embed-responsive-item" poster="img/thumb.png" >
-          <source src="videos/mv-video.mp4" type="video/mp4"></source>
+    <header class="hero-wrap">
+      <div class="hero-video">
+        <video width="1280" height="720" muted>
+        <source src="videos/mv-video.mp4" type="video/mp4">
         </video>
       </div>
     </header>
+    <div class="hero-intro-text">
+        <div class="intro-heading">MUNDOS VIRTUALES</div>
+        <div class="intro-lead-in">Automatización y Robótica</div>
+      </div>
+    
     <section id="section1" class="container">
       <div class="row vertical-align">
         <div class="col-sm-2 col-xs-6">
@@ -112,7 +117,7 @@
       </script>
     
     <footer class="mv-footer">
-      <div class="container">
+      <div class="container footer-text">
         <div class="row">
           <div class="col-xs-6">
             <p>Contacto</p>
@@ -137,6 +142,8 @@
           </div>
         </div>
       </div>
-    </footer>    
+    </footer> 
+    <script src="js/hero-video.js"></script>   
+    <script src="js/mv.js"></script>
   </body>
 </html>
