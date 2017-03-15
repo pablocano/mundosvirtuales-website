@@ -215,3 +215,21 @@ body {
   font-family:'Audiowide', cursive;
   z-index: 1000;
 }
+
+.mv-container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fanuc  h2{
+  color: rgb(172,10,39);
+  font-family: 'Audiowide',cursive;
+  text-align: center;
+}
+.fanuc li,
+.fanuc p{
+  font-family: 'GillSansMT', bold;
+  text-align: justify;
+}
