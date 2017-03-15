@@ -207,15 +207,6 @@ body {
   padding-top: 30px;
 }
 
-.mv-text{
-  font-family: 'GillSansMT', normal;
-}
-
-.mv-title{
-  font-family:'Audiowide', cursive;
-  z-index: 1000;
-}
-
 .mv-container-fluid {
   padding-right: 0px;
   padding-left: 0px;
@@ -227,9 +218,57 @@ body {
   color: rgb(172,10,39);
   font-family: 'Audiowide',cursive;
   text-align: center;
+  font-size: 45px;
 }
+.mv li,
+.mv p,
 .fanuc li,
 .fanuc p{
   font-family: 'GillSansMT', bold;
   text-align: justify;
+  font-size: 30px;
 }
+
+.fanuc .title{
+  text-align: center;
+  font-family:'Audiowide',cursive;
+  font-size:60px
+}
+
+.mv .logo{
+  max-width: 400px;
+}
+
+.mv .text{
+  max-width: 600px;
+  padding-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .fanuc .title{
+    font-size:30px
+  }
+  .fanuc .logo{
+    display: none;
+  }
+  
+  .fanuc h2{
+    font-size: 25px;
+  }
+  
+  .mv p,
+  .mv li,
+  .fanuc li,
+  .fanuc p{
+    font-size: 20px;
+  }
+  
+  .mv .logo{
+    max-width: 200px;
+  }
+  
+  .mv .text{
+    padding-top: 30px;
+  }
+}
+
