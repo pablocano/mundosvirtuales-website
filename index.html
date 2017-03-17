@@ -27,8 +27,9 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#home">Inicio</a></li>
-            <li><a href="#section1">Nosotros</a></li>
-            <li><a href="#section2">FANUC</a></li> 
+            <li><a href="#sectionMV">Nosotros</a></li>
+            <li><a href="#sectionMerc">Mercados</a></li>
+            <li><a href="#sectionFanuc">FANUC</a></li> 
             <li><a href="#contact">Contacto</a></li> 
           </ul>
           <!--
@@ -69,12 +70,13 @@
       </div>
     </header>
 
-    <section class="mv" id="section1">
+    <section class="mv" id="sectionMV">
       <div class="container logo">
         <img src="img/logo.png" class="img-responsive slideanim"></img> 
       </div>
-      <div class="container slideanim text">
-        <p>Mundos Virtuales surge de la necesidad del sector productivo de optimizar sus cadenas de procesos mediante la aplicación de automatización inteligente.<br><br>El objetivo de Mundos Virtuales es convertirse en una empresa líder en robótica aplicada en el sector productivo del país.<p>
+      <div class="container slideanim text" style="max-width:600px">
+        <p>Somos una empresa que ofrece soluciones de automatización y robótica que pertenece a BussoGroup. Surge para cubrir la creciente necesidad del sector productivo de optimizar las cadenas de procesos mediante la aplicación de automatización inteligente.<br><br>Uno de nuestros principales objetivos, es convertirnos en una empresa líder en robótica aplicada en el sector productivo del país.</p>
+
       </div>
       <div class="container" style="max-width:250px">
         <h3>Una empresa<h3>
@@ -86,11 +88,36 @@
       </div>
     </section>
     
+    <section class="merc" id="sectionMerc">
+      <div class="container text-center">
+        <div class="title">Mercados</div>
+        <div class="row text-center slideanim text" style="min-height:350px;padding-top:30px">
+          <div class="col-sm-3">
+            <img src="img/farming.jpg" alt="Paris" class="img-circle">
+            <p>Agricultura</p>
+          </div>
+          <div class="col-sm-3">
+            <img src="img/mining.jpg" alt="Paris" class="img-circle">
+            <p>Mineria</p>
+          </div>
+          <div class="col-sm-3">
+            <img src="img/factory.bmp" alt="Paris" class="img-circle">
+            <p>Industrias</p>
+          </div>
+          <div class="col-sm-3">
+            <img src="img/manufacture.jpg" alt="Paris" class="img-circle">
+            <p>Manofactura</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
     <div style="width:100%">
         <img width="1600" height="560" class="img-responsive" src="img/fanucrobots.jpg">
     </div>    
-    <section id="section2">
-      <div class="container fanuc">
+    <section id="sectionFanuc" class="fanuc">
+      <div class="container">
         <div class="row vertical-align">
           <div class="col-sm-10 col-xs-12 title">
             Integrador oficial de <a href="http://www.fanucamerica.com" style="color:rgb(172,10,39)">FANUC</a>
@@ -101,13 +128,13 @@
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6 slideanim">
+        <div class="row text slideanim">
+          <div class="col-sm-6 ">
             <h2>¿Qué es ser integrador?</h2>
             <p>Somos representantes de la marca <a href="http://www.fanucamerica.com" style="color:rgb(172,10,39)">FANUC</a> en Chile y estamos capacitados y autorizados oficialmente para diseñar e implementar soluciones adaptadas a la necesidad del cliente.</p>
           </div>
-          <div class="col-sm-6 slideanim">
-            <h2>¿Por qué <a href="http://www.fanucamerica.com" style="color:rgb(172,10,39)">FANUC</a>?</h2>
+          <div class="col-sm-6">
+            <h2>¿Por qué <a href="http://www.fanucamerica.com" style="color:rgb(172,10,39)">FANUC</a></h2>
             <ul>
               <li>Existen cerca de 450.000 robots operativos en el mundo.</li>
               <li>Con un MTBF de más de 100.000 horas, los robots <a href="http://www.fanucamerica.com" style="color:rgb(172,10,39)">FANUC</a> son los más confiables del mundo.</li>
@@ -138,7 +165,6 @@
         google.maps.event.addDomListener(window, 'resize', function() {
           map.setCenter(myCenter);
         });
-                                      
       }
     
       google.maps.event.addDomListener(window, 'load', initialize);
@@ -146,7 +172,7 @@
     
     <footer class="mv-footer" id="contact">
       <div class="container footer-text" style="max-width:600px">
-        <div class="row">
+        <div class="row text">
           <div class="col-xs-6">
             <p><a href="mailto:contacto@mundos-virtuales.com">contacto@mundos-virtuales.com</a><br>
             +56 22 634 0141</p>
