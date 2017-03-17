@@ -55,6 +55,7 @@ $(function() {
     newPos.top = Math.min(0, (parentH - $heroEl.height()) / 2);
 
     $heroEl.css(newPos);
+    $heroEl.css('z-index', -10);
   }
 
   // playVid()

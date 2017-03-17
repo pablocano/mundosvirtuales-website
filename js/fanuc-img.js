@@ -34,3 +34,28 @@ $(function() {
     $fanucImg.css(newPos);
   }
 });
+
+$(function() {
+  
+  var $mask = $('#svgmask'),
+    $parent = $mask.parent(),
+    $win = $(window);
+
+  // fit the hero element when the browser window is resized
+  $win.resize(fitMask);
+
+  fitMask();
+
+  //
+  // Center the hero element (image|video) using CSS left/top properties.
+  function fitMask() {
+    
+    var parentW = $parent.width(),
+      parentH = $parent.height();
+      
+    shape = document.getElementById("svgmask");
+    shape2 = document.getElementById("svgmask2");
+    shape.setAttribute("viewBox", "0 0" + parentW + " " + parentH); 
+    shape2.setAttribute("viewBox", "0 0" + parentW + " " + parentH); 
+  }
+});
