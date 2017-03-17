@@ -39,7 +39,7 @@ $(document).ready(function(){
       $(".nav").find(".active").removeClass("active");
       $('.navbar').removeClass("scrolled");
       if($(window).width() > 767){
-        $('.navbar li a').css('color', 'rgb(240,240,240)');
+        $('.navbar li a').css('color', '#1D70B7');
       }
     }
   }
@@ -47,12 +47,13 @@ $(document).ready(function(){
   $('.navbar li a').hover(function(e) {
     if($(window).width() > 767){
       var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
-      if($(window).scrollTop() > startY){
+      $(this).css('color', e.type === 'mouseenter'?'rgb(87,87,87)':'#1D70B7');
+      /*if($(window).scrollTop() > startY){
         $(this).css('color', e.type === 'mouseenter'?'rgb(87,87,87)':'#1D70B7');
       }
       else {
         $(this).css('color', e.type === 'mouseenter'?'#1D70B7':'rgb(240,240,240)');
-      }
+      }*/
     }
     else {
       $(this).css('color', e.type === 'mouseenter'?'rgb(87,87,87)':'#1D70B7');
