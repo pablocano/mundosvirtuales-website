@@ -94,7 +94,7 @@ $(function() {
       
     shape = document.getElementById("svgmask");
     shape2 = document.getElementById("svgmask2");
-    shape.setAttribute("viewBox", "0 0" + parentW + " " + parentH); 
-    shape2.setAttribute("viewBox", "0 0" + parentW + " " + parentH); 
+    shape.setAttribute("viewBox", "0 0 " + parentW + " " + parentH); 
+    shape2.setAttribute("viewBox", "0 0 " + parentW + " " + parentH); 
   }
 });
